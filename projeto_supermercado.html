@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de produtos</title>
+    <!-- Importação do CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="conteiner">
+        <h3>Cadastro de produtos</h3>
+        <form action="backend/_cadastrar_produtos.php" method="post">
+        <div>
+            <label for="">Produtos</label>
+            <input type="text" name="produtos" id="produtos">
+        </div>
+
+        <div>
+            <label for="">Categorias</label>
+            <input type="text" name="categorias" id="categorias">
+        </div>
+
+        <div>
+            <label for="">Fabricante</label>
+            <input type="text" name="fabricante" id="fabricante">
+        </div>
+
+        <div>
+            <label for="">Valor</label>
+            <input type="text" name="valor" id="valor">
+        </div>
+
+        <div>
+            <label for="">Validade</label>
+            <input type="date" name="validade" id="validade">
+        </div>
+
+        <input type="submit" value="Cadastrar">
+
+        </form>
+    </div>
+    
+</body>
+</html>
