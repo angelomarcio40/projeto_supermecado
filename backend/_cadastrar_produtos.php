@@ -45,6 +45,10 @@ $comando->execute();
 // exibe msg de sucesso ao inserir
 echo "Cadastro realizado com sucesso!";
 
+// fechar a conexao
+$con = null;
+
+
 }catch(PDOException $erro){
 
 }
