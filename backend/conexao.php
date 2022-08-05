@@ -5,7 +5,7 @@ try{
     define('SERVIDOR','localhost');
     define('USUARIO','root');
     define('SENHA','');
-    define('BASEDADOS','db_turismo');
+    define('BASEDADOS','db_supermercado');
 
     $con = new PDO("mysql:host=".SERVIDOR.";dbname=".BASEDADOS, USUARIO, SENHA);
     // set the PDO error mode to exception

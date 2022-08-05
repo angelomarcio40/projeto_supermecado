@@ -10,15 +10,15 @@ try{
     // echo "</pre>";
     
     // variaveis que recebm os dados enviados via POST
-    $produto = $_POST['produto'];
-    $categoria = $_POST['categoria'];
+    $produtos = $_POST['produtos'];
+    $categorias = $_POST['categorias'];
     $fabricante = $_POST['fabricante'];
     $valor = $_POST['valor'];
     $validade = $_POST['validade'];
 
     // variavel que recebe a querry SQL que será executada no BD
     $sql = "INSERT INTO
-                tb_viagens
+                tb_produtos
             (
                 `produto`,
                 `categoria`,
@@ -28,8 +28,8 @@ try{
             )
             VALUES
             (
-                '$produto',
-                '$categoria',
+                '$produtos',
+                '$categorias',
                 '$fabricante',
                 '$valor',
                 '$validade'
@@ -50,6 +50,8 @@ $con = null;
 
 
 }catch(PDOException $erro){
+    echo $erro->getMessage();
+    die();
 
 }
 
