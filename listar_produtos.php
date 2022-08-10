@@ -1,4 +1,23 @@
 <?php
+
+include 'backend/conexao.php';
+
+try{
+
+    $sql = "SELECT * FROM tb_produtos";
+
+    $comando = $con->prepare($sql);
+
+    $dados = $comando->fetchAll(PDO::FETCH_ASSOC);
+
+    // echo "<pre>";
+    // var_dump($dados);
+    // echo "</pre>";
+
+}catch(PDOException $erro){
+    echo $erro->getMessage();
+}
+
 ?>
 
 <!DOCTYPE html>
