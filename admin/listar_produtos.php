@@ -1,5 +1,5 @@
 <?php 
-include('../includes/conexao.php');
+include('../backend/conexao.php');
 ?>
   <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <div class="container">
@@ -12,7 +12,7 @@ include('../includes/conexao.php');
             <h3 class="panel-title">CRUD Operation Using PHP PDO</h3> </div>
           <div class="panel-body">
           <?php
-          $query = "SELECT * from tb_reserva";
+          $query = "SELECT * from tb_produtos";
           $res = mysqli_query($conexao,$query);
 
           // conta o numero de registros
@@ -41,9 +41,8 @@ include('../includes/conexao.php');
                     <td><?php echo $dados ['Categorias'] ?></td>
                     <td><?php echo $dados ['Fabricantes'] ?></td>
                     <td><?php echo $dados ['Valor'] ?></td>
-                    <td><?php echo $dados ['Validade'] ?></td>
-                    <td><button><a href="alterar_produtos.php?idreserva=<?php echo $id;?>">Alterar</button></a></td>
-                    <td><button><a href="_deletar_produtos.php?idreserva=<?php echo $id;?>">Excluir</button></a></td>
+                    <td><button><a href="alterar_produtos.php?idproduto=<?php echo $id;?>">Alterar</button></a></td>
+                    <td><button><a href="_deletar_produtos.php?idproduto=<?php echo $id;?>">Excluir</button></a></td>
                   </tr> 
                   <?php } ?> 
               </tbody>

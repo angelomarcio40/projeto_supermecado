@@ -40,7 +40,6 @@ try{
                     <h5>Categoria</h5>
                     <h5>Fabricante</h5>
                     <h5>Valor</h5>
-                    <small>Validade</small>
                     <button class="btn-comprar">Comprar</button>
                 </figcaption>
             </figure>

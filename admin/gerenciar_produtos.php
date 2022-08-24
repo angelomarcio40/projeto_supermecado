@@ -40,7 +40,6 @@
                 <th>Categoria</th>
                 <th>Fabricante</th>
                 <th>Valor</th>
-                <th>Validade</th>
                 <th>Alterar</th>
                 <th>Deletar</th>
             </tr>
@@ -51,8 +50,7 @@
                 <td><?php echo $produto['categoria']?></td>
                 <td><?php echo $produto['fabricante']?></td>
                 <td><?php echo $produto['valor']?></td>
-                <td><?php echo $produto['validade']?></td>
-                <td>Alterar</td>
+                <td>Deletar</td>
                 <td>
                     <a href="../backend/_deletar_produtos.php?id=<?php echo $produto['id']?>">deletar</a>
                 </td>

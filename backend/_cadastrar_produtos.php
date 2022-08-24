@@ -14,7 +14,6 @@ try{
     $categorias = $_POST['categorias'];
     $fabricante = $_POST['fabricante'];
     $valor = $_POST['valor'];
-    $validade = $_POST['validade'];
 
     // variavel que recebe a querry SQL que será executada no BD
     $sql = "INSERT INTO
@@ -23,16 +22,14 @@ try{
                 `produto`,
                 `categoria`,
                 `fabricante`,
-                `valor`,
-                `validade`
+                `valor`
             )
             VALUES
             (
                 '$produtos',
                 '$categorias',
                 '$fabricante',
-                '$valor',
-                '$validade'
+                '$valor'
                 )
             ";
 
