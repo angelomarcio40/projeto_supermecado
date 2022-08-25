@@ -53,7 +53,7 @@ try{
             </div>
             <div>
                 <label for="">Produto</label>
-                <input type="text" name="titulo" id="titulo" value="<?php echo $dados[0]['produto'];?>">
+                <input type="text" name="produto" id="produto" value="<?php echo $dados[0]['produto'];?>">
             </div>
             <div>
                 <label for="local">Categoria</label> 
